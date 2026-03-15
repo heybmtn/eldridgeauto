@@ -814,8 +814,8 @@
        STICKY HEADER
   ============================================================ -->
   <header class="site-header" role="banner">
-    <!-- Replace the placeholder below with <img src="logo.jpg" alt="Eldridge Auto Locksmiths" width="140" height="44"> when logo is supplied -->
-    <div class="logo-placeholder" aria-label="Eldridge Auto Locksmiths logo placeholder">Your Logo Here</div>
+    <!-- Replace the placeholder below with <img src="logo.png" alt="Eldridge Auto Locksmiths" width="140" height="44"> when logo is supplied -->
+    <img src="logo.jpg" alt="Eldridge Auto Locksmiths" width="140" height="44" style="object-fit: contain; height: 44px; width: auto; max-width: 160px;">
 
     <a class="header-phone" href="tel:07391889058" aria-label="Call Eldridge Auto Locksmiths on 07391 889 058">
       <span class="ph-icon" aria-hidden="true">
@@ -969,18 +969,9 @@
 
       <!-- Photo placeholders — replace with real before/after images when available -->
       <div class="photo-grid">
-        <div class="photo-placeholder reveal" role="img" aria-label="Add photo — car key cutting and programming job">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-          <span>Add photo — car key cutting &amp; programming job</span>
-        </div>
-        <div class="photo-placeholder reveal" role="img" aria-label="Add photo — lost car key replacement job">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-          <span>Add photo — lost car key replacement job</span>
-        </div>
-        <div class="photo-placeholder reveal" role="img" aria-label="Add photo — van lockout job with zero damage entry">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-          <span>Add photo — van lockout with zero-damage entry</span>
-        </div>
+        <img src="photo-1.jpg" alt="Car key cutting and programming job — Eldridge Auto Locksmiths Oxfordshire" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--radius-lg);" class="reveal">
+        <img src="photo-2.jpg" alt="Lost car key replacement job — Eldridge Auto Locksmiths Oxfordshire" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--radius-lg);" class="reveal">
+        <img src="photo-3.jpg" alt="Van lockout with zero-damage entry — Eldridge Auto Locksmiths Oxfordshire" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--radius-lg);" class="reveal">
       </div>
 
       <!-- Stats row -->
@@ -1018,10 +1009,7 @@
       <div class="about-grid">
 
         <!-- Owner photo placeholder — replace with <img> when photo is supplied -->
-        <div class="owner-photo-placeholder reveal" role="img" aria-label="Add owner photo — Dominic from Eldridge Auto Locksmiths">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-          <span>Add owner photo — Dominic</span>
-        </div>
+        <img src="owner.jpg" alt="Dominic — Eldridge Auto Locksmiths" style="width:100%; max-height:420px; object-fit:cover; border-radius:var(--radius-lg);" class="reveal">
 
         <div class="about-text">
           <p class="reveal">
@@ -1238,7 +1226,7 @@
 
       <div class="footer-contact">
         <a href="tel:07391889058" aria-label="Call 07391 889 058">07391 889 058</a>
-        <a href="mailto:info@eldridgeautolocksmiths.co.uk" aria-label="Email info@eldridgeautolocksmiths.co.uk">info@eldridgeautolocksmiths.co.uk</a>
+        <a href="/cdn-cgi/l/email-protection#6b02050d042b0e070f19020f0c0e0a1e1f04070408001806021f0318450804451e00" aria-label="Email info@eldridgeautolocksmiths.co.uk"><span class="__cf_email__" data-cfemail="5b32353d341b3e373f29323f3c3e3a2e2f34373438302836322f3328753834752e30">[email&#160;protected]</span></a>
       </div>
 
       <div class="footer-divider" aria-hidden="true"></div>
@@ -1262,7 +1250,7 @@
   <!-- ============================================================
        JAVASCRIPT
   ============================================================ -->
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Footer year
     document.getElementById('footer-year').textContent = new Date().getFullYear();
 
@@ -1314,11 +1302,4 @@
           const response = await fetch(form.action, {
             method: 'POST',
             body: data,
-            headers: { 'Accept': 'application/json' }
-          });
-
-          if (response.ok) {
-            form.style.display = 'none';
-            successEl.classList.add('active');
-            successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          } else {
+            headers: { '
