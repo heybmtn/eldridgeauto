@@ -526,18 +526,21 @@
     .area-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1.75rem;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
     }
     .area-tag {
       background: #fff;
       border: 1.5px solid #e0dbd2;
       border-radius: 100px;
-      padding: 0.35rem 0.9rem;
-      font-size: var(--label);
-      color: #444;
+      padding: 0.5rem 1.1rem;
+      font-size: var(--small);
+      color: #333;
       font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      transition: border-color 0.2s, color 0.2s;
     }
+    .area-tag:hover { border-color: var(--accent); color: var(--accent-dark); }
 
     /* ============================================================
        REVIEWS SECTION
@@ -1019,30 +1022,43 @@
             What sets us apart is our specialist focus. We're not a general locksmith doing everything — we know cars and car keys inside out. We can reprogram systems the dealerships can't touch, which saves you real money on parts. Every job usually takes under 30 minutes, and because we come to you, there's no need for a tow. All our keys come with a guarantee, and we've helped hundreds of happy customers get back on the road.
           </p>
 
-          <!-- Area coverage tags -->
-          <div class="area-tags reveal" aria-label="Areas covered">
-            <span class="area-tag">Witney</span>
-            <span class="area-tag">Banbury</span>
-            <span class="area-tag">Burford</span>
-            <span class="area-tag">Didcot</span>
-            <span class="area-tag">Bicester</span>
-            <span class="area-tag">Abingdon</span>
-            <span class="area-tag">Oxford</span>
-            <span class="area-tag">Carterton</span>
-            <span class="area-tag">Long Hanborough</span>
-            <span class="area-tag">Woodstock</span>
-            <span class="area-tag">Kidlington</span>
-            <span class="area-tag">Eynsham</span>
-            <span class="area-tag">Charlbury</span>
-            <span class="area-tag">Cassington</span>
-            <span class="area-tag">Begbroke</span>
-            <span class="area-tag">Cumnor</span>
-            <span class="area-tag">Bladon</span>
-            <span class="area-tag">Yarnton</span>
-          </div>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       AREAS WE COVER
+  ============================================================ -->
+  <section class="section-pad" id="areas" style="background: #f0ece4;" aria-labelledby="areas-heading">
+    <div class="section-center">
+
+      <span class="eyebrow reveal">Where we work</span>
+      <h2 class="section-heading reveal" id="areas-heading">Areas We Cover</h2>
+      <p class="section-sub reveal">We offer a fully mobile auto locksmith service across Oxfordshire — we come to you, wherever you are.</p>
+
+      <div class="area-tags reveal" aria-label="Areas covered">
+        <span class="area-tag">Witney</span>
+        <span class="area-tag">Banbury</span>
+        <span class="area-tag">Burford</span>
+        <span class="area-tag">Didcot</span>
+        <span class="area-tag">Bicester</span>
+        <span class="area-tag">Abingdon</span>
+        <span class="area-tag">Oxford</span>
+        <span class="area-tag">Carterton</span>
+        <span class="area-tag">Long Hanborough</span>
+        <span class="area-tag">Woodstock</span>
+        <span class="area-tag">Kidlington</span>
+        <span class="area-tag">Eynsham</span>
+        <span class="area-tag">Charlbury</span>
+        <span class="area-tag">Cassington</span>
+        <span class="area-tag">Begbroke</span>
+        <span class="area-tag">Cumnor</span>
+        <span class="area-tag">Bladon</span>
+        <span class="area-tag">Yarnton</span>
+      </div>
+
     </div>
   </section>
 
